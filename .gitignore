@@ -35,3 +35,4 @@ fp-info-cache
 
 *.zip
 Gerbers/*
+plots/*
