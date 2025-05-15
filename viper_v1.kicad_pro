@@ -459,7 +459,10 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "local",
+      "random-keyboard-parts"
+    ],
     "pinned_symbol_libs": []
   },
   "meta": {

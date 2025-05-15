@@ -903,7 +903,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Crystal_GND24_Small"
+		(symbol "Device:Crystal_GND3_Small"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -912,21 +912,19 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "Y"
-				(at 1.27 4.445 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "Crystal_GND24_Small"
-				(at 1.27 2.54 0)
+			(property "Value" "Crystal_GND3_Small"
+				(at 0 3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -947,7 +945,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Four pin crystal, GND on pins 2 and 4, small symbol"
+			(property "Description" "Three pin crystal, GND on pin 3, small symbol"
 				(at 0 0 0)
 				(effects
 					(font
@@ -974,19 +972,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Crystal_GND24_Small_0_1"
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -1.27 1.905) (xy 1.27 1.905) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
+			(symbol "Crystal_GND3_Small_0_1"
 				(polyline
 					(pts
 						(xy -1.27 -0.762) (xy -1.27 0.762)
@@ -1035,7 +1021,7 @@
 					)
 				)
 			)
-			(symbol "Crystal_GND24_Small_1_1"
+			(symbol "Crystal_GND3_Small_1_1"
 				(pin passive line
 					(at -2.54 0 0)
 					(length 1.27)
@@ -1055,34 +1041,16 @@
 					)
 				)
 				(pin passive line
-					(at 0 2.54 270)
-					(length 0.635)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 0.762 0.762)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at 0 -2.54 90)
 					(length 0.635)
-					(name "2"
+					(name "3"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number "3"
 						(effects
 							(font
 								(size 0.762 0.762)
@@ -1093,14 +1061,14 @@
 				(pin passive line
 					(at 2.54 0 180)
 					(length 1.27)
-					(name "3"
+					(name "2"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 0.762 0.762)
@@ -12902,12 +12870,6 @@
 		(uuid "65a47ae2-b910-4487-b027-b85ff1de682e")
 	)
 	(junction
-		(at 236.22 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6736e8bb-f31e-455b-80aa-f92efdb17621")
-	)
-	(junction
 		(at 171.45 180.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -13689,16 +13651,6 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 34.29) (xy 236.22 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "25956600-3594-44f0-858e-f37010611611")
-	)
-	(wire
-		(pts
 			(xy 36.83 240.03) (xy 36.83 242.57)
 		)
 		(stroke
@@ -14349,16 +14301,6 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 40.64) (xy 236.22 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "66db9927-8576-4f85-a74f-5bf88704faaf")
-	)
-	(wire
-		(pts
 			(xy 214.63 247.65) (xy 214.63 248.92)
 		)
 		(stroke
@@ -14636,16 +14578,6 @@
 			(type default)
 		)
 		(uuid "8b825414-f416-4d3e-a228-6cf3370fad02")
-	)
-	(wire
-		(pts
-			(xy 236.22 34.29) (xy 241.3 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8cfed191-b811-4eb8-9523-51b03ffa632a")
 	)
 	(wire
 		(pts
@@ -15279,7 +15211,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 43.18) (xy 236.22 50.8)
+			(xy 236.22 40.64) (xy 236.22 50.8)
 		)
 		(stroke
 			(width 0)
@@ -15296,16 +15228,6 @@
 			(type default)
 		)
 		(uuid "d244aefc-49cb-4885-a394-79756c3cf73b")
-	)
-	(wire
-		(pts
-			(xy 241.3 43.18) (xy 236.22 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d27ae448-f1d0-4de9-a70c-d243aea98836")
 	)
 	(wire
 		(pts
@@ -15386,16 +15308,6 @@
 			(type default)
 		)
 		(uuid "d7df55a3-4819-4526-846c-a8a664157403")
-	)
-	(wire
-		(pts
-			(xy 241.3 34.29) (xy 241.3 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d82dbca6-2603-4c8b-9648-48b783f38dc9")
 	)
 	(wire
 		(pts
@@ -15867,45 +15779,27 @@
 		)
 		(uuid "fed5da8c-d426-4fc1-8f17-b0e3ca8133da")
 	)
-	(label "D-"
+	(global_label "D-"
+		(shape input)
 		(at 109.22 64.77 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify right)
 		)
-		(uuid "37706732-57c9-48a3-9002-f05a7e918f52")
-	)
-	(label "D+"
-		(at 109.22 62.23 180)
-		(effects
-			(font
-				(size 1.27 1.27)
+		(uuid "004cabcb-560b-45a1-a4c7-977bb7b0ee31")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 103.3924 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
 			)
-			(justify right bottom)
 		)
-		(uuid "c901e880-1328-4b50-a30b-890b450b7f91")
-	)
-	(label "D-"
-		(at 33.02 52.07 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ec819116-eda5-4821-ace8-569e2b8e2770")
-	)
-	(label "D+"
-		(at 33.02 49.53 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f6580443-cce5-4058-a3b8-5061844e8d6f")
 	)
 	(global_label "XTAL1"
 		(shape input)
@@ -15925,6 +15819,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D+"
+		(shape input)
+		(at 109.22 62.23 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0f6e7058-e948-41fb-9486-bfb0268a6506")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 103.3924 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -16193,6 +16109,28 @@
 			)
 		)
 	)
+	(global_label "D-"
+		(shape input)
+		(at 33.02 52.07 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "470db527-55bf-458c-956f-ebf4fa60762c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 38.8476 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "Col0"
 		(shape input)
 		(at 46.99 135.89 0)
@@ -16250,6 +16188,28 @@
 		(uuid "4e27503c-e681-4ecf-b0b9-a65a5ba73760")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 214.2889 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D+"
+		(shape input)
+		(at 33.02 49.53 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4e4b8fe7-5efe-44a8-8fcc-fabab3cf1ea7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 38.8476 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17100,7 +17060,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 250.19 212.09 90)
 			(effects
 				(font
@@ -17187,7 +17147,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 214.63 245.11 90)
 			(effects
 				(font
@@ -17410,7 +17370,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 161.29 152.4 90)
 			(effects
 				(font
@@ -17566,7 +17526,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 267.97 152.4 90)
 			(effects
 				(font
@@ -17722,7 +17682,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 36.83 212.09 90)
 			(effects
 				(font
@@ -18005,7 +17965,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Screw_Terminal_01x01"
+		(property "Value" "Tofu Screw"
 			(at 379.73 71.1199 0)
 			(effects
 				(font
@@ -18057,12 +18017,12 @@
 		(lib_name "SW_Push_36")
 		(lib_id "Switch:SW_Push")
 		(at 148.59 209.55 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "0da1dd95-b8d9-4426-b74b-4918e2fc50cf")
 		(property "Reference" "SW40"
 			(at 148.59 201.93 0)
@@ -18347,7 +18307,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 90.17 245.11 90)
 			(effects
 				(font
@@ -18434,7 +18394,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 125.73 152.4 90)
 			(effects
 				(font
@@ -18722,7 +18682,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Screw_Terminal_01x01"
+		(property "Value" "Tofu Screw"
 			(at 379.73 64.7699 0)
 			(effects
 				(font
@@ -18797,7 +18757,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 107.95 182.88 90)
 			(effects
 				(font
@@ -18876,7 +18836,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Screw_Terminal_01x01"
+		(property "Value" "Screw"
 			(at 379.73 58.4199 0)
 			(effects
 				(font
@@ -18951,7 +18911,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 90.17 152.4 90)
 			(effects
 				(font
@@ -19452,7 +19412,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 125.73 212.09 90)
 			(effects
 				(font
@@ -19539,7 +19499,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 125.73 182.88 90)
 			(effects
 				(font
@@ -19695,7 +19655,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 232.41 182.88 90)
 			(effects
 				(font
@@ -19782,7 +19742,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 196.85 212.09 90)
 			(effects
 				(font
@@ -19869,7 +19829,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 107.95 212.09 90)
 			(effects
 				(font
@@ -19956,7 +19916,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 54.61 212.09 90)
 			(effects
 				(font
@@ -20035,7 +19995,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Screw_Terminal_01x01"
+		(property "Value" "Screw"
 			(at 379.73 33.0199 0)
 			(effects
 				(font
@@ -20110,7 +20070,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 179.07 245.11 90)
 			(effects
 				(font
@@ -20282,7 +20242,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 179.07 152.4 90)
 			(effects
 				(font
@@ -20510,7 +20470,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 161.29 182.88 90)
 			(effects
 				(font
@@ -20801,7 +20761,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 107.95 152.4 90)
 			(effects
 				(font
@@ -21096,7 +21056,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 285.75 154.94 90)
 			(effects
 				(font
@@ -21183,7 +21143,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 250.19 152.4 90)
 			(effects
 				(font
@@ -21270,7 +21230,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 36.83 182.88 90)
 			(effects
 				(font
@@ -21357,7 +21317,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 196.85 152.4 90)
 			(effects
 				(font
@@ -21436,7 +21396,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Screw_Terminal_01x01"
+		(property "Value" "Tofu Screw"
 			(at 379.73 45.7199 0)
 			(effects
 				(font
@@ -21644,7 +21604,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 143.51 212.09 90)
 			(effects
 				(font
@@ -21930,7 +21890,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "AVR-ISP-6"
+		(property "Value" "ISP"
 			(at 67.31 52.0699 0)
 			(effects
 				(font
@@ -21939,7 +21899,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "random-keyboard-parts:Reset_Pretty-Mask"
+		(property "Footprint" "local:isp_standard"
 			(at 69.85 50.8 90)
 			(effects
 				(font
@@ -22366,7 +22326,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 214.63 271.78 90)
 			(effects
 				(font
@@ -22591,7 +22551,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 143.51 152.4 90)
 			(effects
 				(font
@@ -22722,7 +22682,6 @@
 		(lib_name "SW_Push_15")
 		(lib_id "Switch:SW_Push")
 		(at 77.47 269.24 0)
-		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23019,7 +22978,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 54.61 271.78 90)
 			(effects
 				(font
@@ -23176,7 +23135,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 54.61 152.4 90)
 			(effects
 				(font
@@ -23263,7 +23222,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 143.51 245.11 90)
 			(effects
 				(font
@@ -23415,7 +23374,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 36.83 245.11 90)
 			(effects
 				(font
@@ -23544,7 +23503,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Crystal_GND24_Small")
+		(lib_id "Device:Crystal_GND3_Small")
 		(at 236.22 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23568,7 +23527,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
+		(property "Footprint" "local:crystal_FA238-TSX3225"
 			(at 236.22 38.1 0)
 			(effects
 				(font
@@ -23586,7 +23545,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Four pin crystal, GND on pins 2 and 4, small symbol"
+		(property "Description" "Three pin crystal, GND on pin 3, small symbol"
 			(at 236.22 38.1 0)
 			(effects
 				(font
@@ -23597,9 +23556,6 @@
 		)
 		(pin "1"
 			(uuid "bc35b4fa-87df-49c5-9947-86c420024ed6")
-		)
-		(pin "4"
-			(uuid "08261c83-49e6-4966-84ce-e7284edb6892")
 		)
 		(pin "2"
 			(uuid "cae89b57-ad52-4726-8dd3-317a2ec8e33d")
@@ -23908,7 +23864,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Screw_Terminal_01x01"
+		(property "Value" "Screw"
 			(at 379.73 26.6699 0)
 			(effects
 				(font
@@ -24052,7 +24008,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 179.07 182.88 90)
 			(effects
 				(font
@@ -24139,7 +24095,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 232.41 271.78 90)
 			(effects
 				(font
@@ -24363,7 +24319,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 196.85 245.11 90)
 			(effects
 				(font
@@ -24588,7 +24544,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 125.73 245.11 90)
 			(effects
 				(font
@@ -24959,7 +24915,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 72.39 271.78 90)
 			(effects
 				(font
@@ -25046,7 +25002,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 232.41 245.11 90)
 			(effects
 				(font
@@ -25200,7 +25156,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 267.97 245.11 90)
 			(effects
 				(font
@@ -25287,7 +25243,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 267.97 182.88 90)
 			(effects
 				(font
@@ -25512,7 +25468,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 214.63 212.09 90)
 			(effects
 				(font
@@ -25599,7 +25555,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 72.39 182.88 90)
 			(effects
 				(font
@@ -25951,7 +25907,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 232.41 212.09 90)
 			(effects
 				(font
@@ -26231,7 +26187,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Screw_Terminal_01x01"
+		(property "Value" "Tofu Screw"
 			(at 379.73 52.0699 0)
 			(effects
 				(font
@@ -26375,7 +26331,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 36.83 152.4 90)
 			(effects
 				(font
@@ -26462,7 +26418,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 214.63 182.88 90)
 			(effects
 				(font
@@ -26618,7 +26574,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 72.39 245.11 90)
 			(effects
 				(font
@@ -26705,7 +26661,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 54.61 245.11 90)
 			(effects
 				(font
@@ -27124,7 +27080,7 @@
 				)
 			)
 		)
-		(property "Value" "BUT_RESET"
+		(property "Value" "BUT_RST"
 			(at 330.2 39.37 0)
 			(effects
 				(font
@@ -27405,7 +27361,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 250.19 245.11 90)
 			(effects
 				(font
@@ -27627,7 +27583,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 250.19 182.88 90)
 			(effects
 				(font
@@ -28126,7 +28082,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 143.51 182.88 90)
 			(effects
 				(font
@@ -28341,7 +28297,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Screw_Terminal_01x01"
+		(property "Value" "Screw"
 			(at 379.73 20.3199 0)
 			(effects
 				(font
@@ -28350,7 +28306,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "local:10x5_7x2.5mm"
+		(property "Footprint" "local:5.5_5x2.5mm"
 			(at 377.19 19.05 0)
 			(effects
 				(font
@@ -28551,7 +28507,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 72.39 152.4 90)
 			(effects
 				(font
@@ -28699,7 +28655,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Screw_Terminal_01x01"
+		(property "Value" "Screw"
 			(at 379.73 39.3699 0)
 			(effects
 				(font
@@ -28977,7 +28933,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 90.17 182.88 90)
 			(effects
 				(font
@@ -29133,7 +29089,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 161.29 245.11 90)
 			(effects
 				(font
@@ -29220,7 +29176,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 72.39 212.09 90)
 			(effects
 				(font
@@ -29373,7 +29329,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 267.97 213.36 90)
 			(effects
 				(font
@@ -29596,7 +29552,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 161.29 212.09 90)
 			(effects
 				(font
@@ -29753,7 +29709,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 54.61 182.88 90)
 			(effects
 				(font
@@ -29909,7 +29865,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 232.41 152.4 90)
 			(effects
 				(font
@@ -29996,7 +29952,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 179.07 212.09 90)
 			(effects
 				(font
@@ -30357,7 +30313,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 90.17 212.09 90)
 			(effects
 				(font
@@ -30444,7 +30400,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 214.63 152.4 90)
 			(effects
 				(font
@@ -30600,7 +30556,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 107.95 245.11 90)
 			(effects
 				(font
@@ -30687,7 +30643,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 196.85 182.88 90)
 			(effects
 				(font
@@ -30843,7 +30799,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 143.51 271.78 90)
 			(effects
 				(font
