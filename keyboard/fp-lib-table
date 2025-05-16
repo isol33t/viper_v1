@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "local")(type "KiCad")(uri "/Users/wim/Exclude from Time Machine/Viper1/local.pretty")(options "")(descr ""))
+)
